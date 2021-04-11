@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database HP</title>
+</head>
+<body>
+<h1>Input Data HP</h1>
+<form action="{{ url_for('inputData') }}" method="post">
+    ID : <br />
+    <input type="text" name="txtID" size="10" maxlength="5" /><br />
+    MERK : <br />
+    <input type="text" name="txtMerk" size="40" maxlength="35" /><br />
+    HARGA : <br />
+    <input type="text" name="txtHarga" size="30" maxlength="25" /><br />
+    STOK : <br />
+    <input type="text" name="txtStok" size="30" maxlength="25" /><br />
+    <p><input type="submit" value="Simpan Data"></p>
+</form>
+
+</body>
+</html>

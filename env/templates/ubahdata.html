@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ubah Data HP</title>
+</head>
+<body>
+<h1>Form Ubah Data HP</h1>
+<form action="url_for('ubahData', id={{ data[0] }})" method="post">
+    ID : <br />
+    <input type="text" name="txtID" size="10" value="{{data[0]}}" maxlength="5" readonly style="background: yellow" /> <br />
+    Merk : <br />
+    <input type="text" name="txtMerk" size="40" value="{{data[1]}}" maxlength="35" /> <br />
+    Harga: <br />
+    <input type="text" name="txtHarga" size="30" value="{{data[2]}}" maxlength="25" /> <br />
+    Stok: <br />
+    <input type="text" name="txtStok" size="30" value="{{data[3]}}" maxlength="25" /> <br />
+    <p><input type="submit" value="Ubah Data"></p>
+</form>
+</body>
+</html>

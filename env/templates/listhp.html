@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIST HP</title>
+</head>
+<body>
+<h1>Daftar HP</h1>
+<table border="1">
+    <tr>
+        <th width="70">ID </th>
+        <th width="300">Merk HP</th>
+        <th width="150">Harga</th>
+        <th width="150">Stok</th>
+        <th width="70">Ubah</th>
+        <th width="70">Hapus</th>
+    </tr>
+    {% for baris in container %}
+<tr>
+        <td>{{ baris[0] }}</td>
+        <td>{{ baris[1] }}</td>
+        <td>{{ baris[2] }}</td>
+        <td>{{ baris[3] }}</td>
+        <td><a href="http://localhost:5000/ubahData/{{ baris[0] }}">Ubah</a></td>
+        <td><a href="http://localhost:5000/hapusData/{{ baris[0] }}">Hapus</a></td>
+    </tr>
+    {% endfor %}
+</table>
+<p><a href="http://localhost:5000/inputData">Input Data Baru</a> </p>
+<p><a href="http://localhost:5000/">Homepage</a> </p>
+</body>
+</html>
